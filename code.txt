@@ -1,0 +1,8 @@
+@if ($groups->id == $i->maingroup_id)
+              @if (in_array($groups->name, $cat_names))
+                  
+              <a href="{{ route('assessment.graphs',['name'=>$groups->name,'id'=>$groups->id,'clientId'=>$i->clientid]) }}" class='p-2' target="_blank">View {{ $groups->name }} Result </a>
+              @endif
+            @endif
+    
+             @endforeach --}}
